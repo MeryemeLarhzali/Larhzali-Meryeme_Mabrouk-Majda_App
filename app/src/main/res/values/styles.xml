@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Couleurs -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <style name="Theme.Projet" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Ajoutez vos personnalisations de style ici -->
+    </style>
+
+    <!-- Style pour l'application -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Définir les couleurs primaires et secondaires -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Styles pour les éléments de l'interface utilisateur -->
+    <style name="Widget.AppCompat.EditText" parent="Widget.AppCompat.EditText">
+        <!-- Définir des attributs supplémentaires si nécessaire -->
+    </style>
+
+    <style name="Widget.AppCompat.Button.Colored" parent="Widget.AppCompat.Button.Colored">
+        <!-- Définir des attributs supplémentaires si nécessaire -->
+    </style>
+
+    <style name="Widget.AppCompat.CompoundButton.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <!-- Définir des attributs supplémentaires si nécessaire -->
+    </style>
+
+    <!-- Ajoutez d'autres styles AppCompat au besoin -->
+
+</resources>

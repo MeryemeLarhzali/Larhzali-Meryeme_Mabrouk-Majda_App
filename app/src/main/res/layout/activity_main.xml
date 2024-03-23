@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@color/Violet"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail:"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:background="@drawable/round"
+        android:inputType="text"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Votre adresse e-mail...."
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Mot de passe:"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/motdepasse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:background="@drawable/round"
+        android:inputType="textPassword"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Votre mot de passe..."
+        android:focusable="true"
+        android:focusableInTouchMode="true"        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se Connecter"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/Rose"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        android:onClick="gererConnexion"
+        />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Garder ma session active "
+        android:textSize="15sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mot de passe oublie ?"
+        android:textSize="15sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="65dp"
+        android:gravity="center_horizontal">
+
+        <!-- TextView pour le tiret à gauche -->
+        <TextView
+            android:id="@+id/leftDash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="---------------------------"
+            android:textColor="@color/Violet"
+            android:textSize="20sp" />
+
+        <!-- Cercle intérieur avec le texte "OU" au centre -->
+        <TextView
+            android:id="@+id/circleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_background"
+            android:padding="10dp"
+            android:text="OU"
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+
+        <!-- TextView pour le tiret à droite -->
+        <TextView
+            android:id="@+id/rightDash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="---------------------------"
+            android:textSize="20sp"
+            android:textColor="@color/Violet" />
+
+        <!-- Cercle extérieur -->
+        <View
+            android:id="@+id/outerCircle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_outline" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:background="@color/Rose"
+        android:padding="20dp"
+        android:text="Vous n'avez pas encore de compte ?"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/inscrire"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="-20dp"
+        android:background="@color/Rose"
+        android:onClick="inscrire"
+        android:text="Inscrivez-vous ici"
+        android:textAlignment="center"
+        android:textColor="@color/Violet"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="110dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="150dp"
+        android:layout_below="@id/inscrire"
+        android:layout_marginTop="-10dp"
+        android:background="@color/Violet" />
+
+
+</LinearLayout>

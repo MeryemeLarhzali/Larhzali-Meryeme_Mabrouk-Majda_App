@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inscription2"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Vous serez le plus proche de marché de travail  "
+        android:layout_gravity="center"
+        android:padding="24dp"
+        android:textSize="15dp"
+        android:background="@color/Violet"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textStyle="normal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="c'est gratuit"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="-23dp"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:id="@+id/main2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous êtes :" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recruteur cherche des CV et poste des annonces de travail"
+                android:textSize="13dp"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidat cherche des annonces et poste des CV"
+                android:textSize="13dp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:text="E-mail:"
+            android:textSize="18dp" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:background="@drawable/spinner_border"
+            android:inputType="text"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="Votre adresse e-mail...."
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="18dp"
+            android:text="Ville" />
+
+
+        <Spinner
+            android:id="@+id/citySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_border"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Mot de passe:"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/spinner_border"
+            android:hint="choisissez un mot de passe...."
+            android:inputType="textPassword"
+            android:padding="18dp"
+            android:textSize="15dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/motdepasse"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="(au moins 5 caracteres )choisissez un mot de passe qui n'est pas facile a deviner."
+        android:textSize="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="16dp"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="9dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/decorative_line" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:text=" Confirmer le Mot de passe:"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/confirmermdps"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/spinner_border"
+            android:hint="choisissez un mot de passe...."
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textSize="16dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/Violet"
+        android:padding="20dp"
+        android:text="En validant mon inscription , j'accepte les conditions generales  d'utilisateur du site alkhad.ma "
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/CreerCompte"
+        android:layout_width="119dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="-70dp"
+        android:backgroundTint="@color/Rose"
+        android:text="Creer un compte"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="9dp"
+        android:textStyle="bold"
+        android:onClick="creerCompte"
+        />
+</LinearLayout>
